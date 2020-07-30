@@ -11,7 +11,7 @@ bridge.connect()
 
 bridge.get_api()
 
-bridge.set_light([1, 2], 'on', True)
+bridge.set_light([1, 2], 'on', True) # Change to False to switch off the light
 
 def get_Audio():
     r = sr.Recognizer()
