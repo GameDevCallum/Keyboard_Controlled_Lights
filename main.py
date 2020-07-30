@@ -23,6 +23,8 @@ def get_Audio():
             said = r.recognize_google(audio)
             print("Input")
             print(said)
+            bridge.set_light(1, "hue", random.randrange(0, 65535))
+            bridge.set_light(2, "hue", random.randrange(0, 65535))
         except Exception as e:
             bridge.set_light(1, "hue", random.randrange(0, 65535))
             bridge.set_light(2, "hue", random.randrange(0, 65535))
